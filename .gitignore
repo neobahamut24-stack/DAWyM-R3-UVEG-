@@ -1,0 +1,11 @@
+﻿node_modules/
+Jaramillo_Vicente_R2_U2.zip
+GestorTareas_UVEG.zip
+
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx

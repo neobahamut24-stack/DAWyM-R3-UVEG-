@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de tareas</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+    <main class="contenedor">
+        <header class="encabezado">
+            <img src="img/universidad-uveg.jpg"
+                 alt="Logotipo de la UVEG"
+                 class="logo-uveg">
+            <span class="etiqueta">PRODUCTIVIDAD PERSONAL</span>
+            <h1>Mi gestor de tareas</h1>
+            <p>Organiza tus pendientes y avanza un día a la vez.</p>
+        </header>
+
+        <section class="panel">
+            <form id="formulario">
+                <label for="tarea">¿Qué necesitas hacer?</label>
+                <div class="entrada">
+                    <input id="tarea"
+                           type="text"
+                           placeholder="Ej. Terminar una actividad"
+                           required
+                           maxlength="120">
+                    <button type="submit">Agregar</button>
+                </div>
+            </form>
+
+            <div class="resumen">
+                <span id="contador">0 tareas pendientes</span>
+                <button id="limpiar" class="secundario" type="button">
+                    Limpiar completadas
+                </button>
+            </div>
+
+            <ul id="lista" aria-live="polite"></ul>
+            <p id="vacio" class="vacio">
+                Aún no tienes tareas. ¡Agrega la primera!
+            </p>
+        </section>
+
+        <footer>
+            <p>Gestor de tareas · Proyecto académico UVEG</p>
+            <nav aria-label="Documentos legales">
+                <a href="aviso-privacidad.html">Aviso de Privacidad</a>
+                <span aria-hidden="true"> | </span>
+                <a href="terminos-condiciones.html">Términos y Condiciones</a>
+            </nav>
+        </footer>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
+```
